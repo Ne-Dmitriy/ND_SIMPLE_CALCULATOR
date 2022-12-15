@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" /> 
+    <title>CALCULATOR</title>
+</head>  
+<body>
+     
+    <form name="calc">  
+        <table border=15>   
+
+            <tr>  
+                <td colspan="4">  
+                <input type="text" name="display" id="main-input" value="" readonly>  
+                </td>  
+            </tr>  
+
+            <td> <input type="button" class="hover-class" value="0" onClick="calc.display.value+='0'"> </td>  
+            <td> <input type="button" class="hover-class" value="1" onClick="calc.display.value+='1'"> </td>   
+            <td> <input type="button" class="hover-class" value="2" onClick="calc.display.value+='2'"> </td>  
+            <td> <input type="button" class="operator hover-class" name = "plus" value="+" onClick="calc.display.value+='+'"></td>  
+            <tr>  
+
+            <td> <input type="button" class="hover-class" value="3" onClick="calc.display.value+='3'"> </td>  
+            <td> <input type="button" class="hover-class" value="4" onClick="calc.display.value+='4'"> </td>  
+            <td> <input type="button" class="hover-class" value="5" onClick="calc.display.value+='5'"> </td>  
+            <td> <input type="button" class="operator hover-class" name="minus"value="-" onClick="calc.display.value+='-'"> </td>  
+
+            </tr>  
+            <tr>  
+            <td> <input type="button" class="hover-class" value="6" onClick="calc.display.value+='6'"> </td>  
+            <td> <input type="button" class="hover-class" value="7" onClick="calc.display.value+='7'"> </td>  
+            <td> <input type="button" class="hover-class" value="8" onClick="calc.display.value+='8'"> </td>  
+            <td> <input type="button" class="operator hover-class" name="times"value="*" onClick="calc.display.value+='*'"></td>  
+
+            </tr>  
+            <tr>  
+            <td> <input type="button" class="hover-class" value="9" onClick="calc.display.value+='9'"></td>  
+            <td> <input type="button" class="hover-class" id="clear" name="clear" value="c" onClick="calc.display.value=''"></td>  
+            <td> <input type="button" class="operator hover-class" name="equal" value="=" onClick="calc.display.value=eval(calc.display.value)"></td>  
+            <td> <input type="button" class="operator hover-class" name = "div"value="/" onClick="calc.display.value+='/'"> </td>  
+            </tr> 
+        </table>  
+   </form>   
+</body> 
+</html> 
